@@ -1,0 +1,77 @@
+﻿/*גוף הדף*/
+body {
+    background-color: #26c92d;/*רקע ירוק*/
+}
+/*הכותרת של הטופס*/
+.header-form {
+    font-size: 40px;/*גודל טקסט*/
+    margin: 0 auto 50px;/*מיקום למעלה 0 ימינה ממורכז למטה 50*/
+    color: #26c92d;/*צבע כיתוב ירוק בהיר*/
+}
+
+
+/*הבלוק שעוטף את הטופס מבחוץ */
+.login-res-page {
+    width: 360px; /*אורך הטופס*/
+    padding: 8%; /*מיקום הטופס כלפיי מעלה*/
+    margin: auto; /*ממרכז טופס*/
+}
+
+/*הבלוק שעוטף את הטופס מבפנים*/
+.formLogin-res {
+    position: relative; /*מיקום יחסי לדף*/
+    background: #ffffff; /*צבע לבן*/
+    max-width: 360px; /*הרוחב המקסימאלי של הטופס*/
+    margin: 0 auto 100PX; /*למעלה 0 :ימינה ממורכז :למטה 100*/
+    padding: 45px; /*מיקום בבלוק*/
+    text-align: center; /*טקסט ממורכז  בדף הטופס*/
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24); /*הצללה של התיבה*/
+}
+    /*הקלט של הטפסים*/
+    .formLogin-res input {
+        font-family: "roboto"; /*סוג של כתיב*/
+        background: #f2f2f2; /*צבע לבן אפור לקליטה*/
+        width: 100%; /*רוחב התיבה לעומת הבלוק */
+        border: 0; /*ללא גבול*/
+        margin: 0 0 15px; /*מרווח בין התיבות*/
+        padding: 15px; /*גודל תיבה פנימי*/
+        box-sizing: border-box; /*גודל תיבה קבוע*/
+        font-size: 14px; /*גודל טקסט*/
+    }
+
+    /*הכפתור של הטפסים*/
+    .formLogin-res button {
+        font-family: "roboto"; /*סוג של כתיב*/
+        text-transform: uppercase; /*אותיות גדולות בכפתור*/
+        background: #4caf50; /*צבע  ירוק כהה*/
+        width: 100%; /*רוחב כפתור לעומת הטופס*/
+        border: 0; /*ללא גבול*/
+        padding: 15px; /*רוחב כפתור פנימי*/
+        color: #ffffff; /*צבע לבן*/
+        font-size: 14px; /*גודל טקסט*/
+        cursor: pointer; /*מצביע יד*/
+    }
+
+        /*עמידה על הכפתור תשנה גוון של צבע*/
+        .formLogin-res button:hover, .formLogin-res button:active, .formLogin-res button:focus {
+            background: #43a047; /*ירוק כהה*/
+        }
+
+    /* ההודעה של הטופס */
+    .formLogin-res .message {
+        margin: 15px 0 0; /*מיקום הפסקה ההודעה  של הרשמה*/
+        color: #b3b3b3; /*סוג של אפור*/
+        font-size: 14px; /*גודל טקסט פסקה*/
+    }
+
+        /*הקישור של פסקת ההודעה של הטופס*/
+        .formLogin-res .message a {
+            color: #4caf50; /*סוג של ירוק*/
+            text-decoration: none; /*ללא קו תחתון*/
+        }
+
+/*פסקה מכילה זכויות יוצרים*/
+#copyWriter{
+    font-size:x-large;/*גודל טקסט לארג*/
+    margin-left:41%;/*דוחף ימינה*/
+}

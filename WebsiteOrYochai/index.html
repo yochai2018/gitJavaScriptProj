@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html><!--html5 הצהרה על-->
+<html><!--פתיחת דף--->
+<head><!--פתיחת ראש דף--->
+    <title>Login</title><!--כותרת תגית דפדפן--->
+    <meta charset="utf-8" /><!---הוא קידוד תווים באורך משתנה ליוניקוד-->
+    <link href="styles/styleForms.css" rel="stylesheet" /><!---קובץ הסטייל של דף הכניסה-->
+    <script src="scripts/jquery-3.2.1.slim.min.js"></script><!---jquary סקריפט מאפשר שימוש ב -->
+    <script src="scripts/loginScript.js"></script><!---סקריפט של הדף כניסה-->
+</head><!---סגירת ראש הדף-->
+<body><!--פתיחת גוף הדף--->
+    <div class="login-res-page"><!--בלוק שעוטף את הטופס מבחוץ--->
+        <div class="formLogin-res"><!--בלוק שעוטף את הטופס מבפנים--->
+            <h1 class="header-form">Login form</h1><!---כותרת של הטופס-->
+            <form id="login"><!--פתיחת טופס הסקריפט תופס אותו בפתיחת הדף--->
+                <input type="text" placeholder="username" id="userNameLog" required /><!---תיבת קלט הסקריפט תופס אותו לביצוע בדיקת תקינות-->
+                <input type="password" placeholder="password" id="passwordLog" required /><!--תיבת קלט סיסמא הסקריפט תופס אותו לביצוע בדיקת תקינות--->
+                <button type="submit">Login</button><!--כפתור כניסה לאתר אם לחצתה מבצע בדיקת תקינות לקלט ונכנס לדף פרופיל--->
+                <p class="message">Not registered?<a href="registerPage.html">Create an account</a></p><!--פסקה מעוצבת בדף סטייל מכילה קישור לדף הרשמה נמצא בתוך הבלוק העוטף הפנימי--->
+            </form><!---סגירת טופס-->
+        </div><!---סגירת בלוק פנימי-->
+    </div><!--סגירת בלוק חיצוני--->
+    <footer><p id="copyWriter">&copy כל הזכויות שמורות לאור ג'רבי ויוחאי גלמן</p></footer><!--פסקה בסוף הדף מכילה כיתוב זכויות יוצרים-->
+</body><!---סגירת גוף הדף-->
+</html><!---סגירת דף-->
+<!--שורה ריקה-->

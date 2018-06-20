@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html><!--פתיחת דף-->
+<head><!--ראש דף-->
+    <title>profilePage</title><!--כותרת תגית דפדפן-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--מייבא איקונים-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--מייבא איקונים-->
+    <!--<link href="styles/map.css" rel="stylesheet" /><!--סטייל של גוגל -->-->
+    <meta charset="utf-8" /><!--קידוד מאפשר עברית-->
+    <link href="styles/profileImageStyle.css" rel="stylesheet" /><!--סטייל דף פרופיל-->
+    <script src="scripts/jquery-3.2.1.slim.min.js"></script><!----jquary script --->
+    <script src="scripts/profilePageScript.js"></script><!--סקריפט דף פרופיל-->
+</head><!-- סגירת ראש דף-->
+<body><!--פתיחת גוף דף-->
+    <header id="headProfilePage"><h1></h1></header><!--כותרת  פרופיל -->
+    <div id="profile-container"><!--בלוק מכיל תמונת פרופיל -->
+        <div id="dUserDeta"></div><!--בלוק זה מקבל פרטים אישיים דרך הסקריפט-->
+        <img id="profileImage" /><!--תגית תמונה ליבוא תמונת פרופיל-->
+        <button id="gameB"  class="profileButton">Asteroid game</button><!--כפתור למשחק אסטרואידים-->
+        <button id="updateD"  class="profileButton" >update details</button><!--כפתור לדף עדכון פרטים-->
+   </div><!--סוגר בלוק מכיל תמונת פרופיל-->
+  
+    <input id="imageUpload" type="file" name="profile_photo"><!--תיבט קלט לבחירת תמונה-->
+  
+    <div id="floating-panel"><!--בלוק תג מכיל מיקום בגיאולוקיישן-->
+        <input id="latlng" type="text" value=""><!--תיבת קלט מקבלת נקודות מיקום-->
+        <input id="submit" type="button" value="Reverse Geocode"><!--כפתור לקבלת נקודות מיקום-->
+    </div><!--סוגר בלוק של תג גיאולוקישן-->
+    <div id="map"></div><!--בלוק מכיל מפה -->
+    <!--תכונה בוליאנית זו מציינת לדפדפן שהסקריפט אמור להתבצע לאחר ניתוח המסמך-->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwHuBg8EZfq0ul2WppkVDxz01Z7NGfJS0&callback=getLocation">
+    </script><!--getLocationאיך שהתמונה עולה קפוץ לפונקציה -->
+</body><!--סגירת גוף דף פרופיל-->
+</html><!--סגירת דף-->
+<!--שורה ריקה-->

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html><!--html5 הצהרה על-->
+<html><!--פתיחת דף-->
+<head><!--פתיחת ראש דף-->
+    <title>registerPage</title><!--כותרת תגית דפדפן-->
+    <meta charset="utf-8" /><!---הוא קידוד תווים באורך משתנה ליוניקוד-->
+    <link href="styles/styleForms.css" rel="stylesheet" /><!---קובץ הסטייל של דף הכניסה-->
+    <script src="scripts/jquery-3.2.1.slim.min.js"></script><!---jquary סקריפט מאפשר שימוש ב -->
+    <script src="scripts/registerScript.js"></script><!--סקריפט טופס הרשמה שלנו-->
+    <script src="scripts/user.js"></script><!--JSON סקריפט יצירת מערך ב-->
+</head><!--סגירת ראש דף-->
+<body><!--פתיחת גוף דף-->
+    <div class="login-res-page"><!--בלוק שעוטף את הטופס מבחוץ--->
+        <div class="formLogin-res"><!--בלוק שעוטף את הטופס מבפנים--->
+            <h1 class="header-form">register form</h1><!---כותרת של הטופס-->
+            <form id="register"><!--פתיחת טופס הרשמה נתפס בידי הסקריפט בפתיחת הדף-->
+                <input type="text" placeholder="username" id="userNameReg" required /><!--קלט טקסט נתפס בסקריפט לביצוע בדיקת תקינות-->
+                <input type="password" placeholder="password" id="passwordReg" required /><!--קלט מסוג סיסמא נתפס בסקריפט לביצוע בדירת תקינות-->
+                <input type="password" placeholder="Re password" id="rePassword" required /><!--תיבת קלט מסוג סיסמא מבצע בסקריפט אימות לסיסמא שהוקלדה-->
+                <input type="text" placeholder="First Name" id="firstName" required /><!--תיבת קלט מסוג טקסט להכנסת שם פרטי בודק תקינות בסקריפט-->
+                <input type="text" placeholder="Last Name" id="lastName" required /><!--תיבת קלט מסוג טקסט להכנסת שם משפחה בודק תקינות בסקריפט-->
+                <input type="email" placeholder="Email" id="email" required /><!--תיבת קלט אימייל להכנסת מייל בודק תקינות בסקריפט-->
+                <input type="date" placeholder="Date of birth" id="DOB" required /><!--תיבת קלט תאריך מקבל תאריך לידה מבצע בדיקת תקינות בסקריפט-->
+                <input type="text" list="citylist" placeholder="enter city" name="city" id="city" autocomplete="on" required><!--תיבת קלט טקסט אשר מקיים רשימה של ערים בעל השלמה אוטומטית-->
+                <datalist id="citylist"></datalist><!--רשימת ערים נתפס בסקריפט מערך הערים-->
+                <input type="text" placeholder="Street" id="street" required /><!--תיבת קלט טקסט להכנסת שם רחוב בודק תקינות בסקריפת-->
+                <input type="text" placeholder="Street Number" id="streetNumber" required /><!--תיבת קלט טקסט להכנסת מספר רחוב בודק תקינות בסקריפט-->
+                <button type="submit">Create</button><!--כפתור אישור נתפס בסקריפט ברגע לחיצה-->
+                <p class="message">Already registered?<a href="index.html">sign in</a></p><!--פסקה בעיצוב הסטייל מכילה בתוכה קישור לדפ הכניסה-->
+            </form><!---סגירת טופס-->
+        </div><!---סגירת בלוק פנימי-->
+    </div><!--סגירת בלוק חיצוני--->
+</body><!---סגירת גוף הדף-->
+</html><!---סגירת דף-->
+<!--שורה ריקה-->

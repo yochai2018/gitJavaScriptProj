@@ -1,0 +1,84 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue; /*צבע תכלת*/
+}
+/*כותרת לדף פרופיל*/
+#headProfilePage {
+    text-align: center; /*ממקם טקסט באמצע*/
+    font-size: 40px; /*גודלטקסט*/
+    background-color: gray; /*צבע רקע כותרת*/
+    color: green; /*צבע כיתוב ירוק*/
+}
+
+/*בלוק תופס את הפרטים האישיים */
+#dUserDeta {
+    margin-left: 500px; /*דוחף שמאלה*/
+    margin-top: 260px; /*זז למטה*/
+    margin-top: -45px; /*דוחף למטה תגית מיקום גיאולוקיישן */
+    margin-bottom: -36px; /*דוחף למעלה בלוק זה*/
+    padding-top: 182px; /*מיקום בלוק בדף*/
+}
+
+/*כפתור משחק אסטרואידים*/
+#asGmae {
+    margin: 143px;
+}
+
+/*לקליטת קובץ input תגית */
+#imageUpload {
+    display: none; /*מעלים קלט תיבת קליטה תמונה*/
+}
+
+/*להשמת תמונה  img תגית  */
+#profileImage {
+    cursor: pointer; /*מצביע יד*/
+    border: 1px solid black; /*גבול חלק בצבע שחור*/
+    margin-top: -225px; /*מיקום למעלה*/
+    margin-left: 20px; /*דוחף ימינה*/
+    background-color: gray; /*צבע רקע אפור*/
+}
+
+
+/*הבלוק שמכיל את התמונה*/
+#profile-container img {
+    width: 380px; /*רוחב תמונה*/
+    height: 500px; /*גובה תמונה*/
+}
+
+/*בלוק שמכיל מפה*/
+#map {
+    position: absolute; /*מיקום מוחלט*/
+    margin-left: 525px; /*דוחף ימינה*/
+    margin-top: 77px; /*דוחף למטה*/
+    height: 50%; /*גובה מפה*/
+    width: 35%; /*רוחב מפה*/
+}
+
+/*בלוק מכיל תיבת קלט וכפתור של גיאולוקישון*/
+#floating-panel {
+    position: absolute; /*מיקום מוחלת*/
+    top: 896px; /*מזיז למטה*/
+    left: 37%; /*מזיז ימינה*/
+    width: 652px; /*רוחב פס*/
+    background-color: white; /*צבע רקע של הבלוק לבן*/
+    padding: 5px; /*ממורכז בתוך הבלוק*/
+    border: 1px solid #999; /* גודל גבול חלק צבע אפור60*/
+    margin-left: -178px; /*מיקום משאלה*/
+}
+
+/*מחלקה כפתורים בדף הפרופיל*/
+.profileButton {
+    margin-left: 150px; /*מיקום בדף ימינה*/
+    width: 80px; /*רוחב כפתור*/
+    border-radius: 20%; /*העגלה של הפינות*/
+    background-color: red; /*צבע רקע אדום*/
+    color: blue; /*צבע כיתוב כחול*/
+    height: 38px; /*גובה הכפתורים*/
+}
+
+/*תיבת קלט של המיקום*/
+#latlng {
+    width: 225px; /*רוחב תיבת קלט*/
+    padding-left: 50px; /*מיקום משמאל*/
+}

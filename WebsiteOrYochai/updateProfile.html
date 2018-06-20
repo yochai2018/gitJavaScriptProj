@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html><!--html5 הצהרה על-->
+<html><!--פתיחת דף-->
+<head><!--פתיחת ראש דף-->
+    <title>updateProfile</title><!--כותרת תגית דפדפן-->
+    <meta charset="utf-8" /><!---הוא קידוד תווים באורך משתנה ליוניקוד-->
+    <link href="styles/styleForms.css" rel="stylesheet" /><!---קובץ הסטייל של דף הכניסה-->
+    <script src="scripts/jquery-3.2.1.slim.min.js"></script><!---jquary סקריפט מאפשר שימוש ב -->
+    <script src="scripts/updateProfileScript.js"></script><!--סקריפט טופס הרשמה שלנו-->
+    <script src="scripts/user.js"></script>
+</head><!--סגירת ראש דף-->
+<body><!--פתיחת גוף דף-->
+    <div class="login-res-page"><!--בלוק שעוטף את הטופס מבחוץ--->
+        <div class="formLogin-res"><!--בלוק שעוטף את הטופס מבפנים--->
+            <h1 class="header-form">update form</h1><!---כותרת של הטופס-->
+            <form id="update"><!--פתיחת טופס עדכון פרטים-->
+                <input type="password" placeholder="password" id="password" /><!--קלט מסוג סיסמא נתפס בסקריפט לביצוע בדירת תקינות-->
+                <input type="password" placeholder="Re password" id="rePassword" /><!--תיבת קלט מסוג סיסמא מבצע בסקריפט אימות לסיסמא שהוקלדה-->
+                <input type="text" placeholder="First Name" id="firstName" /><!--תיבת קלט מסוג טקסט להכנסת שם פרטי בודק תקינות בסקריפט-->
+                <input type="text" placeholder="Last Name" id="lastName" /><!--תיבת קלט מסוג טקסט להכנסת שם משפחה בודק תקינות בסקריפט-->
+                <input type="email" placeholder="Email" id="email" /><!--תיבת קלט אימייל להכנסת מייל בודק תקינות בסקריפט-->
+                <input type="date" placeholder="Date of birth" id="DOB" /><!--תיבת קלט תאריך מקבל תאריך לידה מבצע בדיקת תקינות בסקריפט-->
+                <input type="text" list="citylist" placeholder="enter city" name="city" id="city" autocomplete="on"><!--תיבת קלט טקסט אשר מקיים רשימה של ערים בעל השלמה אוטומטית-->
+                <datalist id="citylist"></datalist><!--רשימת ערים נתפס בסקריפט מערך הערים-->
+                <input type="text" placeholder="Street" id="street" /><!--תיבת קלט טקסט להכנסת שם רחוב בודק תקינות בסקריפת-->
+                <input type="text" placeholder="Street Number" id="streetNumber" /><!--תיבת קלט טקסט להכנסת מספר רחוב בודק תקינות בסקריפט-->
+                <button type="submit">update</button><!--כפתור אישור נתפס בסקריפט ברגע לחיצה-->
+                <p class="message">Not update?<a href="profilePage.html">return profile</a></p><!--פסקה מעוצבת בדף סטייל מכילה קישור לדף פרופיל נמצא בתוך הבלוק העוטף הפנימי--->
+            </form><!---סגירת טופס-->
+        </div><!---סגירת בלוק פנימי-->
+    </div><!--סגירת בלוק חיצוני--->
+</body><!---סגירת גוף הדף-->
+</html><!---סגירת דף-->
+<!--שורה ריקה-->
